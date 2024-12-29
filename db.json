@@ -1,0 +1,44 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "name": "Ballon de Football",
+      "brand": "Nike",
+      "price": 25.99,
+      "category": "Football",
+      "description": "Ballon de foot pro - size 5",
+      "stock": 15,
+      "image": "https://example.com/football.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Raquette de tennis",
+      "brand": "Wilson",
+      "price": 89.99,
+      "category": "Tennis",
+      "description": "Graphite tennis racket",
+      "stock": 8,
+      "image": "https://example.com/racket.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Tapis de Yoga",
+      "brand": "Decathlon",
+      "price": 19.99,
+      "category": "Fitness",
+      "description": "Non-slip yoga mat 4mm",
+      "stock": 20,
+      "image": "https://example.com/mat.jpg"
+    },
+    {
+      "id": "cbef",
+      "name": "Ballon de rugby",
+      "brand": "Rugby",
+      "price": 20,
+      "category": "Football",
+      "description": "sqcfdgb",
+      "stock": 3,
+      "image": "https://example.com/default.jpg"
+    }
+  ]
+}
