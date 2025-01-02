@@ -56,7 +56,8 @@ esport/
 │   │   ├── ArticleForm.ts
 │   │   ├── ArticleList.ts
 │   │   ├── ArticleFilter.ts
-│   │   └── Cart.ts
+│   │   ├── Cart.ts
+│   │   └── EditArticle.ts   
 │   ├── services/        # Services de gestion des données
 │   │   ├── ArticleService.ts
 │   │   ├── CartService.ts
