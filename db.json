@@ -35,7 +35,7 @@
       "name": "Ballon de rugby",
       "brand": "Rugby",
       "price": 20,
-      "category": "Football",
+      "category": "Rugby",
       "description": "sqc",
       "stock": 3,
       "image": "https://example.com/default.jpg"
