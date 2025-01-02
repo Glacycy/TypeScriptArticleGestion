@@ -104,6 +104,15 @@ Gère les opérations du panier :
 ### ErrorService
 Gère l'affichage des erreurs de manière centralisée
 
+## Structure des Composants
+
+- `Article.ts` : Affichage individuel d'un article
+- `ArticleForm.ts` : Formulaire d'ajout d'articles
+- `ArticleList.ts` : Liste et gestion des articles
+- `ArticleFilter.ts` : Filtrage des articles par catégorie
+- `Cart.ts` : Gestion du panier d'achats
+- `EditArticle.ts` : Interface modale pour la modification des articles existants
+
 ## Points Techniques Importants
 
 - Utilisation du pattern Singleton pour les services
