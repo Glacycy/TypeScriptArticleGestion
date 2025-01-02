@@ -169,23 +169,31 @@ export default class ArticleForm extends Component {
     }
 
     /**
+     * Fait défiler la page jusqu'au formulaire
+     */
+    public scrollIntoView(): void {
+        this.form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    /**
      * Remplit le formulaire avec les données d'un article pour l'édition
+     * @param article L'article à modifier
      */
     public fillFormForEdit(article: ArticleInterface): void {
         this.isEditMode = true;
         this.currentArticleId = article.id;
 
         // Mise à jour du titre du formulaire
-        const title = this.parentElement.querySelector('.card-title');
+        const title = this.form.querySelector('.card-title');
         if (title) {
             title.textContent = 'Modifier l\'Article';
         }
 
         // Remplissage des champs
         Object.keys(article).forEach(key => {
-            const input = this.form.querySelector(`[name="${key}"]`);
+            const input = this.form.querySelector(`[name="${key}"]`) as HTMLInputElement | null;
             if (input && key !== 'id' && key !== 'image') {
-                (input as HTMLInputElement | HTMLTextAreaElement).value = article[key as keyof ArticleInterface].toString();
+                input.value = article[key as keyof ArticleInterface].toString();
             }
         });
 
@@ -205,7 +213,7 @@ export default class ArticleForm extends Component {
         this.currentArticleId = null;
 
         // Réinitialisation du titre
-        const title = this.parentElement.querySelector('.card-title');
+        const title = this.form.querySelector('.card-title');
         if (title) {
             title.textContent = 'Ajouter un Article';
         }
