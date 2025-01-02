@@ -58,12 +58,14 @@ esport/
 │   │   ├── ArticleFilter.ts
 │   │   ├── Cart.ts
 │   │   └── EditArticle.ts   
+│   ├── interfaces/      # Interfaces TypeScript
+│   │   └── ArticleInterface.ts
 │   ├── services/        # Services de gestion des données
 │   │   ├── ArticleService.ts
 │   │   ├── CartService.ts
 │   │   └── ErrorService.ts
-│   ├── interfaces/      # Interfaces TypeScript
-│   │   └── ArticleInterface.ts
+│   ├── styles/          # style SCSS générale de la page
+│   │   └── main.scss
 │   ├── utils/          # Utilitaires
 │   │   └── Component.ts
 │   ├── index.html      # Page HTML principale
